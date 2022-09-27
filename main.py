@@ -88,7 +88,7 @@ my_bool = num1 != num2
 print(my_bool)
 
 ##############################logical operators##################################################
-
+#logical operators lesson
 
 # Logical Operators Practice #1
 # Create three variables (num1, num2, and num3):
@@ -100,9 +100,11 @@ print(my_bool)
 # Inside num3, store the value 48
 
 # Check if num1 is greater than num2, and less than num3. Store the result of that comparison in a variable called my_bool.
-
-
-
+num1 = 36
+num2 = 72/2
+num3 = 48
+my_bool = num1 > num2 and num1 < num3
+print(my_bool)
 
 # Logical Operators Practice #2
 # Create three variables (num1, num2, and num3):
@@ -114,8 +116,11 @@ print(my_bool)
 # Inside num3, store the value 48
 
 # Check if num1 is greater than num2, or less than num3. Store the result of that comparison in a variable called my_bool.
-
-
+num1 = 26
+num2 = 72/2
+num3 = 46
+my_bool = num1 > num2 or num1 < num3
+print(my_bool)
 
 # Logical Operators Practice #3
 # Check if the words:
@@ -127,10 +132,9 @@ print(my_bool)
 # are not found in the sentence below, and store the result (a boolean) in a variable called my_bool:
 
 # "When something is important enough, you do it even if the odds are against you" - Elon Musk
-
-
-
-
+text = "When something is important enough, you do it even if the odds are against you"
+inText = "success" in text and "tehcnology" in text
+print(inText)
 
 ########################################decision making in python#####################################
 
