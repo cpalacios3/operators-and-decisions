@@ -184,71 +184,73 @@ else:
 # "You can't drive. You need to have a license"
 
 # Use the code base already provided to set up the appropriate flow control structure and check those conditions.
-age = int(input("Enter your age: "))
-license = input("Do you have your license?: ")
-if age < 18:
-  print("You can't drive yet. You must be 18 years old and have a license")
-elif age >= 18 and license == "No":
-  print("You can't drive. You need to have a license")
-elif age >= 18 and license == "Yes":
-  print("You can drive")
+# age = int(input("Enter your age: "))
+# license = input("Do you have your license?: ")
+# if age < 18:
+#   print("You can't drive yet. You must be 18 years old and have a license")
+# elif age >= 18 and license == "No":
+#   print("You can't drive. You need to have a license")
+# elif age >= 18 and license == "Yes":
+#   print("You can drive")
 
-# "You can drive"
+# # "You can drive"
 
-# "You can't drive yet. You must be 18 years old and have a license"
+# # "You can't drive yet. You must be 18 years old and have a license"
 
-# "You can't drive. You need to have a license"
+# # "You can't drive. You need to have a license"
 
-# Decision Making Practice #3
-# To access a certain job, the candidate must be able to program in Python and speak French.
+# # Decision Making Practice #3
+# # To access a certain job, the candidate must be able to program in Python and speak French.
 
-# Create a conditional structure to evaluate a candidate given these conditions, and display the corresponding message on the screen:
+# # Create a conditional structure to evaluate a candidate given these conditions, and display the corresponding message on the screen:
 
-# "You meet the requirements to apply"
+# # "You meet the requirements to apply"
 
-# "To apply, you need to know how to program in Python and speak French"
+# # "To apply, you need to know how to program in Python and speak French"
 
-# "To apply, you need to speak French"
+# # "To apply, you need to speak French"
 
-# "To apply, you need to know how to program in Python"
+# # "To apply, you need to know how to program in Python"
 
-# Use the code already provided to set up the appropriate flow control structure and check those conditions. Evaluate a candidate who knows French, but does not know how to program in Python.
-speak_french = False
-knows_python = False
+# # Use the code already provided to set up the appropriate flow control structure and check those conditions. Evaluate a candidate who knows French, but does not know how to program in Python.
+# speak_french = False
+# knows_python = False
 
-if speak_french == True and knows_python == True:
-  print("You meet the requirements to apply")
-elif speak_french == False and knows_python == True:
-  print("To apply, you need to speak French")
-elif speak_french == True and knows_python == False:
-  print("To apply, you need to know how to program in Python")
-else:
-  print("To apply, you need to know how to program in Python and speak French")
+# if speak_french == True and knows_python == True:
+#   print("You meet the requirements to apply")
+# elif speak_french == False and knows_python == True:
+#   print("To apply, you need to speak French")
+# elif speak_french == True and knows_python == False:
+#   print("To apply, you need to know how to program in Python")
+# else:
+#   print("To apply, you need to know how to program in Python and speak French")
 
 
-# Decision Making Practice #4
-# ask the user for their age
-# if the user's  is between 18 - 21 , print they can vote, other wise print better luck next time.
-age = int(input("Age?: "))
-if age >= 18 and age <= 21:
-  print("you can vote")
-else:
-  print("better luck next time")
+# # Decision Making Practice #4
+# # ask the user for their age
+# # if the user's  is between 18 - 21 , print they can vote, other wise print better luck next time.
+# age = int(input("Age?: "))
+# if age >= 18 and age <= 21:
+#   print("you can vote")
+# else:
+#   print("better luck next time")
   
 ###################################loops intro######################################
 # queue videos
 #what is iteration?
 #what are for loops?
-
-
+my_list = ['a', 'b', 'c', 'd']
+for letter in my_list:
+  letter_number = my_list.index(letter) + 1
+  print(f"letter {letter_number}: {letter}")
 # For Loops Practice #1
 # Using For loops, greet all members of a class, printing "Hello" + their name.
 
 # For example: "Hello Norville"
 
 students = ["Norville", "Fred", "Velma", "Daphne"]
-
-
+for item in students:
+  print("Hello, " + item)
 
 
 # For Loops Practice #2
